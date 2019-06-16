@@ -1,3 +1,24 @@
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f3e1c7; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #ff9a8d; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #e88073; 
+  }
+
+
 body {
     padding: 0;
     margin: 0;
@@ -181,7 +202,6 @@ section {
 }
 
 #all .items {
-    border: 1px solid black;
     background-color: #f3e1c7;
     display: flex;
     flex-direction: column;

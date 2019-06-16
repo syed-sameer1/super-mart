@@ -16,6 +16,11 @@ function addapple() {
     total = appleqty * 10 + orangeqty * 15 + bananaqty * 7 + cucumberqty * 12 + mugqty * 130 + roseqty * 80;;
     document.getElementById('totalbill').innerHTML = total;
     console.log(total);
+    // if (document.querySelector(#wallet) < total){
+    //     alert("sorry");
+    // }else{
+    //     alert("saldj");
+    // };
 
 }
 function minusapple() {
