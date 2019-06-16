@@ -6,11 +6,13 @@
   /* Track */
   ::-webkit-scrollbar-track {
     background: #f3e1c7; 
+    border-radius: 10px;
   }
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
     background: #ff9a8d; 
+    border-radius: 10px;
   }
   
   /* Handle on hover */
