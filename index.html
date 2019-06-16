@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Ubuntu&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <img src="images/logo.png" alt="logo">
+        <h1>Welcome To SuperMart</h1>
+    </header>
+    <nav>
+        <h2>categories ></h2>
+        <button class="grow">All</button>
+        <button class="grow">fruits</button>
+        <button class="grow">vegetables</button>
+        <button class="grow">crockery</button>
+    </nav>
+    <main>
+        <aside>
+            <div>
+                Syed Sameer <i class="far fa-user"></i>
+            </div>
+            <div>
+                Your Wallet
+                <input type="text" value="0">
+            </div>
+            <div class="menu">Special Offers</div>
+            <div class="menu">Sale</div>
+            <div class="menu">Our Benefits</div>
+            <div class="menu">Ouo Potential</div>
+            <div class="menu">iPromotions</div>
+            <div class="menu">Our Team</div>
+            <div class="menu">About US</div>
+            <div><span> Log Out &nbsp&nbsp<i class="fas fa-sign-out-alt"></i></span> <i class="fas fa-cog"></i></div>
+        </aside>
+        <section>
+            <section id="bill">Your Total Bill is <span id="totalbill">0</span></section>
+            <section id="all">
+                <div class="items">
+                    <div class="item-name">Apple</div>
+                    <div class="item-pic">
+                        <img src="images/apple.png" alt="apple">
+                    </div>
+                    <div class="item-price">RS:10</div>
+                    <div class="item-qty">
+                        <button class="min-btn" onclick="minusapple()">-</button>
+                        <input type="button" value="0" class="total-btn" id="apple">
+                        <button class="plus-btn" onclick="addapple()">+</button>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="item-name">Orange</div>
+                    <div class="item-pic">
+                        <img src="images/orange.png" alt="apple">
+                    </div>
+                    <div class="item-price">RS:15</div>
+                    <div class="item-qty">
+                        <button class="min-btn" onclick="minusorange()">-</button>
+                        <input type="button" value="0" class="total-btn" id="orange">
+                        <button class="plus-btn" onclick="addorange()">+</button>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="item-name">Banana</div>
+                    <div class="item-pic">
+                        <img src="images/banana.png" alt="apple">
+                    </div>
+                    <div class="item-price">RS:7</div>
+                    <div class="item-qty">
+                        <button class="min-btn" onclick="minusbanana()">-</button>
+                        <input type="button" value="0" class="total-btn" id="banana">
+                        <button class="plus-btn" onclick="addbanana()">+</button>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="item-name">Cucumber</div>
+                    <div class="item-pic">
+                        <img src="images/cucumber.png" alt="apple">
+                    </div>
+                    <div class="item-price">RS:12</div>
+                    <div class="item-qty">
+                        <button class="min-btn" onclick="minuscucumber()">-</button>
+                        <input type="button" value="0" class="total-btn" id="cucumber">
+                        <button class="plus-btn" onclick="addcucumber()">+</button>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="item-name">Mug</div>
+                    <div class="item-pic">
+                        <img src="images/mug.png" alt="apple">
+                    </div>
+                    <div class="item-price">RS:130</div>
+                    <div class="item-qty">
+                        <button class="min-btn" onclick="minusmug()">-</button>
+                        <input type="button" value="0" class="total-btn" id="mug">
+                        <button class="plus-btn" onclick="addmug()">+</button>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="item-name">Rose Bouquet</div>
+                    <div class="item-pic">
+                        <img src="images/Bouquet.png" alt="apple">
+                    </div>
+                    <div class="item-price">RS:80</div>
+                    <div class="item-qty">
+                        <button class="min-btn" onclick="minusrose()">-</button>
+                        <input type="button" value="0" class="total-btn" id="rose">
+                        <button class="plus-btn" onclick="addrose()">+</button>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+<script src="script.js"></script>
+</body>
+
+</html>
