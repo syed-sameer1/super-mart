@@ -265,7 +265,7 @@ header h1 {
     display: inline-block;
 }
 
-.logo h2{
+.logo h2 {
     flex-grow: 1;
     margin: 15px 20px;
     font-family: 'Pacifico', cursive;
@@ -349,41 +349,6 @@ header h1 {
     font-size: 24px;
     cursor: pointer;
     display: none;
-}
-
-@media (max-width: 991px) {
-    #header {
-        padding: 0 20px;
-    }
-    #logo {
-        height: 60px;
-    }
-    .menu-toggle {
-        display: block;
-        margin-top: 10px;
-        color: #41403e;
-    }
-    #header nav {
-        position: absolute;
-        width: 100%;
-        height: calc(100vh - 50px);
-        background-color: #fff;
-        top: 178px;
-        left: -100%;
-        transition: 0.5s;
-        z-index: 2;
-    }
-    #header nav.active {
-        left: 0;
-        width: 100%;
-    }
-    #header nav ul {
-        display: block;
-        text-align: center;
-    }
-    #header nav ul li a {
-        border-bottom: 1px solid rgba(0, 0, 0, .2);
-    }
 }
 
 main {
@@ -624,4 +589,57 @@ section {
     background-color: white;
     border: transparent;
     font-size: 20px;
+}
+
+@media (max-width: 991px) {
+    #header {
+        padding: 0 20px;
+    }
+    #logo {
+        height: 60px;
+    }
+    .menu-toggle {
+        display: block;
+        margin-top: 10px;
+        color: #41403e;
+    }
+    #header nav {
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 50px);
+        background-color: #fff;
+        top: 178px;
+        left: -100%;
+        transition: 0.5s;
+        z-index: 2;
+    }
+    #header nav.active {
+        left: 0;
+        width: 100%;
+    }
+    #header nav ul {
+        display: block;
+        text-align: center;
+    }
+    #header nav ul li a {
+        border-bottom: 1px solid rgba(0, 0, 0, .2);
+    }
+    #all {
+        grid-template-columns: 300px 300px;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    #bill-head {
+        width: 95%;
+    }
+}
+
+@media (max-width: 917px) {
+    #all {
+        grid-template-columns: 300px;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        justify-content: center;
+    }
+    #bill-head {
+        width: 98%;
+    }
 }
