@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Pacifico|Ubuntu&display=swap" rel="stylesheet">
 
     <title>Super-Mart</title>
-    <link rel = "icon" type = "image/png" href = "images/logo.png">
+    <link rel="icon" type="image/png" href="images/logo.png">
 </head>
 
 <body id="body">
@@ -64,10 +64,10 @@
         })</script>
     <div id="header">
         <div class="logo">
-                <h2>categories ></h2>
+            <h2>categories ></h2>
         </div>
         <nav>
-            
+
             <ul>
                 <li><a href="#">ALL</a></li>
                 <li><a href="#">FRUITS</a></li>
@@ -112,72 +112,86 @@
                     <div class="item-name">Apple</div>
                     <div class="item-pic">
                         <img src="images/apple.png" alt="apple">
+                        <img src="images/apple.png" alt="apple" class="two">
+                        <img src="images/apple.png" alt="apple" class="three">
+
                     </div>
                     <div class="item-price">RS:10</div>
                     <div class="item-qty">
-                        <button class="min-btn" onclick="minusapple()">-</button>
+                        <button class="min-btn" onclick="minusapple()" onmouseover="ona()"
+                            onmouseout="outa()">-</button>
                         <input type="button" value="0" class="total-btn" id="apple">
-                        <button class="plus-btn" onclick="addapple()">+</button>
+                        <button class="plus-btn" onclick="addapple()" onmouseover="ona()" onmouseout="outa()">+</button>
                     </div>
                 </div>
                 <div class="items">
                     <div class="item-name">Orange</div>
                     <div class="item-pic">
                         <img src="images/orange.png" alt="apple">
+                        <img src="images/orange.png" alt="orange.png" class="four">
+                        <img src="images/orange.png" alt="orange.png" class="five">
                     </div>
                     <div class="item-price">RS:15</div>
                     <div class="item-qty">
-                        <button class="min-btn" onclick="minusorange()">-</button>
+                        <button class="min-btn" onclick="minusorange()" onmouseover="ono()" onmouseout="outo()">-</button>
                         <input type="button" value="0" class="total-btn" id="orange">
-                        <button class="plus-btn" onclick="addorange()">+</button>
+                        <button class="plus-btn" onclick="addorange()" onmouseover="ono()" onmouseout="outo()">+</button>
                     </div>
                 </div>
                 <div class="items">
                     <div class="item-name">Banana</div>
                     <div class="item-pic">
                         <img src="images/banana.png" alt="apple">
+                        <img src="images/banana.png" alt="banana.png" class="six">
+                        <img src="images/banana.png" alt="banana.png" class="seven">
                     </div>
                     <div class="item-price">RS:7</div>
                     <div class="item-qty">
-                        <button class="min-btn" onclick="minusbanana()">-</button>
+                        <button class="min-btn" onclick="minusbanana()" onmouseover="onb()" onmouseout="outb()">-</button>
                         <input type="button" value="0" class="total-btn" id="banana">
-                        <button class="plus-btn" onclick="addbanana()">+</button>
+                        <button class="plus-btn" onclick="addbanana()" onmouseover="onb()" onmouseout="outb()">+</button>
                     </div>
                 </div>
                 <div class="items">
                     <div class="item-name">Cucumber</div>
                     <div class="item-pic">
                         <img src="images/cucumber.png" alt="apple">
+                        <img src="images/cucumber.png" alt="cucumber.png" class="eight">
+                        <img src="images/cucumber.png" alt="cucumber.png" class="nine">
                     </div>
                     <div class="item-price">RS:12</div>
                     <div class="item-qty">
-                        <button class="min-btn" onclick="minuscucumber()">-</button>
+                        <button class="min-btn" onclick="minuscucumber()" onmouseover="onc()" onmouseout="outc()">-</button>
                         <input type="button" value="0" class="total-btn" id="cucumber">
-                        <button class="plus-btn" onclick="addcucumber()">+</button>
+                        <button class="plus-btn" onclick="addcucumber()" onmouseover="onc()" onmouseout="outc()">+</button>
                     </div>
                 </div>
                 <div class="items">
                     <div class="item-name">Mug</div>
                     <div class="item-pic">
                         <img src="images/mug.png" alt="apple">
+                        <img src="images/mug.png" alt="mug.png" class="ten">
+                        <img src="images/mug.png" alt="mug.png" class="tenten">
                     </div>
                     <div class="item-price">RS:130</div>
                     <div class="item-qty">
-                        <button class="min-btn" onclick="minusmug()">-</button>
+                        <button class="min-btn" onclick="minusmug()" onmouseover="onm()" onmouseout="outm()">-</button>
                         <input type="button" value="0" class="total-btn" id="mug">
-                        <button class="plus-btn" onclick="addmug()">+</button>
+                        <button class="plus-btn" onclick="addmug()" onmouseover="onm()" onmouseout="outm()">+</button>
                     </div>
                 </div>
                 <div class="items">
                     <div class="item-name">Rose Bouquet</div>
                     <div class="item-pic">
                         <img src="images/Bouquet.png" alt="apple">
+                        <img src="images/Bouquet.png" alt="Bouquet.png" class="ninenine">
+                        <img src="images/Bouquet.png" alt="Bouquet.png" class="sixsix">
                     </div>
                     <div class="item-price">RS:80</div>
                     <div class="item-qty">
-                        <button class="min-btn" onclick="minusrose()">-</button>
+                        <button class="min-btn" onclick="minusrose()" onmouseover="onr()" onmouseout="outr()">-</button>
                         <input type="button" value="0" class="total-btn" id="rose">
-                        <button class="plus-btn" onclick="addrose()">+</button>
+                        <button class="plus-btn" onclick="addrose()" onmouseover="onr()" onmouseout="outr()">+</button>
                     </div>
                 </div>
             </section>

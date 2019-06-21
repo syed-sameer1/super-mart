@@ -448,6 +448,8 @@ section {
     font-size: 30px;
     position: sticky;
     top: 0;
+    z-index: 100;
+
     background-color: #eae8dcc7;
     width: 99%;
 }
@@ -521,6 +523,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
     background: white;
     margin: 0 10px;
     height: 150px;
@@ -528,6 +531,15 @@ section {
 
 .item-pic img {
     height: 100px;
+    position: absolute;
+}
+
+.item-pic .two,.four,.six,.eight,.ten,.ninenine {
+    opacity: 0.7;
+}
+
+.item-pic .three,.five,.seven,.nine,.tenten,.sixsix {
+    opacity: 0.4;
 }
 
 .item-price {
