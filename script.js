@@ -21,7 +21,114 @@ let bananaqty = 0;
 let cucumberqty = 0;
 let mugqty = 0;
 let roseqty = 0;
+//themes
+function Dark() {
+    let box = document.querySelector("input[type=checkbox]");
+    if (box.checked == true) {
+        getComputedStyle(document.documentElement)
+            .getPropertyValue('--head-nav');
+        document.documentElement.style
+            .setProperty('--head-nav', '#FB8122');
+        getComputedStyle(document.documentElement)
+            .getPropertyValue('--all-fonts');
+        document.documentElement.style
+            .setProperty('--all-fonts', '#f49247');
+        getComputedStyle(document.documentElement)
+            .getPropertyValue('--header-border');
+        document.documentElement.style
+            .setProperty('--header-border', 'rgb(65, 64, 64)');
+        getComputedStyle(document.documentElement)
+            .getPropertyValue('--button-div');
+        document.documentElement.style
+            .setProperty('--button-div', '#949494');
+        getComputedStyle(document.documentElement)
+            .getPropertyValue('--button');
+        document.documentElement.style
+            .setProperty('--button', '#d3d3d3');
+        getComputedStyle(document.documentElement)
+            .getPropertyValue('--buy-button');
+        document.documentElement.style
+            .setProperty('--buy-button', 'rgb(78, 248, 11)');
+        getComputedStyle(document.documentElement)
+            .getPropertyValue('--body');
+        document.documentElement.style
+            .setProperty('--body', '#1D2228');
+        getComputedStyle(document.documentElement)
+            .getPropertyValue('--nav-itemBox');
+        document.documentElement.style
+            .setProperty('--nav-itemBox', '#575757');
+        getComputedStyle(document.documentElement)
+            .getPropertyValue('--side-bar');
+        document.documentElement.style
+            .setProperty('--side-bar', '#f0b384');
+        getComputedStyle(document.documentElement)
+            .getPropertyValue('--total-bill');
+        document.documentElement.style
+            .setProperty('--total-bill', 'rgba(65, 64, 64, 0.80)');
+        getComputedStyle(document.documentElement)
+            .getPropertyValue('--shadow');
+        document.documentElement.style
+            .setProperty('--shadow', 'rgb(50, 50, 50)');
+        getComputedStyle(document.documentElement)
+            .getPropertyValue('--input-color');
+        document.documentElement.style
+            .setProperty('--input-color', 'white');
+    } else {
+        getComputedStyle(document.documentElement)
+            .getPropertyValue('--head-nav');
+        document.documentElement.style
+            .setProperty('--head-nav', '#e88073');
+        getComputedStyle(document.documentElement)
+            .getPropertyValue('--all-fonts');
+        document.documentElement.style
+            .setProperty('--all-fonts', '#e85a50');
+        getComputedStyle(document.documentElement)
+            .getPropertyValue('--header-border');
+        document.documentElement.style
+            .setProperty('--header-border', '#eae8dc');
+        getComputedStyle(document.documentElement)
+            .getPropertyValue('--button-div');
+        document.documentElement.style
+            .setProperty('--button-div', '#c9c8c3');
+        getComputedStyle(document.documentElement)
+            .getPropertyValue('--button');
+        document.documentElement.style
+            .setProperty('--button', '#8e8d89');
+        getComputedStyle(document.documentElement)
+            .getPropertyValue('--buy-button');
+        document.documentElement.style
+            .setProperty('--buy-button', 'rgb(78, 248, 11)');
+        getComputedStyle(document.documentElement)
+            .getPropertyValue('--body');
+        document.documentElement.style
+            .setProperty('--body', '#fff');
+        getComputedStyle(document.documentElement)
+            .getPropertyValue('--nav-itemBox');
+        document.documentElement.style
+            .setProperty('--nav-itemBox', '#f3e1c7');
+        getComputedStyle(document.documentElement)
+            .getPropertyValue('--side-bar');
+        document.documentElement.style
+            .setProperty('--side-bar', '#5f5f5f');
+        getComputedStyle(document.documentElement)
+            .getPropertyValue('--total-bill');
+        document.documentElement.style
+            .setProperty('--total-bill', '#eae8dcc7');
+        getComputedStyle(document.documentElement)
+            .getPropertyValue('--shadow');
+        document.documentElement.style
+            .setProperty('--shadow', '#ccc');
+        getComputedStyle(document.documentElement)
+            .getPropertyValue('--input-color');
+        document.documentElement.style
+            .setProperty('--input-color', 'black');
+    }
 
+}
+// function Light() {
+
+// }
+//themes
 
 function keep() {
     document.querySelector(".black2").style = "display: none";
@@ -34,13 +141,6 @@ function ok2() {
     document.querySelector("#body").style = "overflow: show";
 
     document.querySelector(".mess").style = "display : none";
-}
-
-function ok() {
-    document.querySelector(".black3").style = "display: none";
-    document.querySelector("#body").style = "overflow: show";
-
-    document.querySelector(".mess3").style = "display : none";
 }
 
 function buy() {
@@ -99,7 +199,7 @@ function outa() {
 function addorange() {
     let wallet = Number(document.querySelector("#wallet").value);
     let totalbill = Number(document.getElementById('totalbill').innerHTML);
-    if (wallet <= document.getElementById('totalbill').innerHTML) {
+    if (wallet <= totalbill) {
         document.querySelector(".black").style = "display : flex";
         document.querySelector("#body").style = "overflow: hidden";
         document.querySelector(".mess").style = "display  : flex";
@@ -137,7 +237,7 @@ function outo() {
 function addbanana() {
     let wallet = Number(document.querySelector("#wallet").value);
     let totalbill = Number(document.getElementById('totalbill').innerHTML);
-    if (wallet <= document.getElementById('totalbill').innerHTML) {
+    if (wallet <= totalbill) {
         document.querySelector(".black").style = "display : flex";
         document.querySelector("#body").style = "overflow: hidden";
         document.querySelector(".mess").style = "display  : flex";
@@ -175,10 +275,10 @@ function outb() {
 function addcucumber() {
     let wallet = Number(document.querySelector("#wallet").value);
     let totalbill = Number(document.getElementById('totalbill').innerHTML);
-    if (wallet <= document.getElementById('totalbill').innerHTML) {
-        document.querySelector(".black3").style = "display: flex";
+    if (wallet <= totalbill) {
+        document.querySelector(".black").style = "display: flex";
         document.querySelector("#body").style = "overflow: hidden";
-        document.querySelector(".mess3").style = "display : flex";
+        document.querySelector(".mess").style = "display : flex";
         // alert("soty");
 
 
@@ -213,10 +313,10 @@ function outc() {
 function addmug() {
     let wallet = Number(document.querySelector("#wallet").value);
     let totalbill = Number(document.getElementById('totalbill').innerHTML);
-    if (wallet <= document.getElementById('totalbill').innerHTML) {
-        document.querySelector(".black3").style = "display: flex";
+    if (wallet <= totalbill) {
+        document.querySelector(".black").style = "display: flex";
         document.querySelector("#body").style = "overflow: hidden";
-        document.querySelector(".mess3").style = "display : flex";
+        document.querySelector(".mess").style = "display : flex";
         // alert("soty");
 
 
@@ -251,10 +351,10 @@ function outm() {
 function addrose() {
     let wallet = Number(document.querySelector("#wallet").value);
     let totalbill = Number(document.getElementById('totalbill').innerHTML);
-    if (wallet <= document.getElementById('totalbill').innerHTML) {
-        document.querySelector(".black3").style = "display: flex";
+    if (wallet <= totalbill) {
+        document.querySelector(".black").style = "display: flex";
         document.querySelector("#body").style = "overflow: hidden";
-        document.querySelector(".mess3").style = "display : flex";
+        document.querySelector(".mess").style = "display : flex";
         // alert("soty");
 
 

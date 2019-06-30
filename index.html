@@ -16,16 +16,6 @@
 </head>
 
 <body id="body">
-    <div class="black3" style="display:none;">
-        <div class="mess3" style="display:none;">
-            <div class="opps3">
-                <span> Opps!</span> <img src="images/emoji.png" alt="emoji">
-            </div>
-            <div class="sorry3">
-                <span> Sorry you can't buy more! </span><button onclick="ok()">OK</button>
-            </div>
-        </div>
-    </div>
     <div class="black" style="display:none;">
         <div class="mess" style="display:none;">
             <div class="opps">
@@ -62,23 +52,7 @@
                 $('nav').toggleClass('active')
             })
         })</script>
-    <div id="header">
-        <div class="logo">
-            <h2>categories ></h2>
-        </div>
-        <nav>
 
-            <ul>
-                <li><a href="#">ALL</a></li>
-                <li><a href="#">FRUITS</a></li>
-                <li><a href="#">VEGETABLES</a></li>
-                <li><a href="#">CROCKERY</a></li>
-            </ul>
-        </nav>
-        <div class="menu-toggle">
-            <i class="fa fa-bars" aria-hidden="true"></i>
-        </div>
-    </div>
     <main>
 
         <aside>
@@ -89,6 +63,17 @@
                 Your Wallet
                 <input type="text" id="wallet" placeholder="0">
             </div>
+            <div class="dark">
+                <strong><em> Dark Theme</em></strong>
+                <label>
+                    <input type="checkbox" name="" onclick="Dark()">
+                    <span class="check"></span>
+                    <span class="text on"  onclick="">N</span>
+                    <span class="text off" >FF</span>
+                </label>
+            </div>
+            <!-- <div class="menu" onclick="Light()"><strong><em> Light Themes</em></strong></div> -->
+
             <div class="menu">Special Offers</div>
             <div class="menu">Sale</div>
             <div class="menu">Our Benefits</div>
@@ -96,6 +81,7 @@
             <div class="menu">iPromotions</div>
             <div class="menu">Our Team</div>
             <div class="menu">About US</div>
+
             <div><span> Log Out &nbsp&nbsp<i class="fas fa-sign-out-alt"></i></span> <i class="fas fa-cog"></i></div>
         </aside>
         <section>
@@ -108,6 +94,23 @@
                 </div>
             </section>
             <section id="all">
+                <div id="header">
+                    <div class="logo">
+                        <h2>categories ></h2>
+                    </div>
+                    <nav>
+
+                        <ul>
+                            <li><a href="#">ALL</a></li>
+                            <li><a href="#">FRUITS</a></li>
+                            <li><a href="#">VEGETABLES</a></li>
+                            <li><a href="#">CROCKERY</a></li>
+                        </ul>
+                    </nav>
+                    <div class="menu-toggle">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </div>
+                </div>
                 <div class="items">
                     <div class="item-name">Apple</div>
                     <div class="item-pic">
@@ -127,49 +130,55 @@
                 <div class="items">
                     <div class="item-name">Orange</div>
                     <div class="item-pic">
-                        <img src="images/orange.png" alt="apple">
+                        <img src="images/orange.png" alt="orange.png">
                         <img src="images/orange.png" alt="orange.png" class="four">
                         <img src="images/orange.png" alt="orange.png" class="five">
                     </div>
                     <div class="item-price">RS:15</div>
                     <div class="item-qty">
-                        <button class="min-btn" onclick="minusorange()" onmouseover="ono()" onmouseout="outo()">-</button>
+                        <button class="min-btn" onclick="minusorange()" onmouseover="ono()"
+                            onmouseout="outo()">-</button>
                         <input type="button" value="0" class="total-btn" id="orange">
-                        <button class="plus-btn" onclick="addorange()" onmouseover="ono()" onmouseout="outo()">+</button>
+                        <button class="plus-btn" onclick="addorange()" onmouseover="ono()"
+                            onmouseout="outo()">+</button>
                     </div>
                 </div>
                 <div class="items">
                     <div class="item-name">Banana</div>
                     <div class="item-pic">
-                        <img src="images/banana.png" alt="apple">
+                        <img src="images/banana.png" alt="banana.png">
                         <img src="images/banana.png" alt="banana.png" class="six">
                         <img src="images/banana.png" alt="banana.png" class="seven">
                     </div>
                     <div class="item-price">RS:7</div>
                     <div class="item-qty">
-                        <button class="min-btn" onclick="minusbanana()" onmouseover="onb()" onmouseout="outb()">-</button>
+                        <button class="min-btn" onclick="minusbanana()" onmouseover="onb()"
+                            onmouseout="outb()">-</button>
                         <input type="button" value="0" class="total-btn" id="banana">
-                        <button class="plus-btn" onclick="addbanana()" onmouseover="onb()" onmouseout="outb()">+</button>
+                        <button class="plus-btn" onclick="addbanana()" onmouseover="onb()"
+                            onmouseout="outb()">+</button>
                     </div>
                 </div>
                 <div class="items">
                     <div class="item-name">Cucumber</div>
                     <div class="item-pic">
-                        <img src="images/cucumber.png" alt="apple">
+                        <img src="images/cucumber.png" alt="cucumber.png">
                         <img src="images/cucumber.png" alt="cucumber.png" class="eight">
                         <img src="images/cucumber.png" alt="cucumber.png" class="nine">
                     </div>
                     <div class="item-price">RS:12</div>
                     <div class="item-qty">
-                        <button class="min-btn" onclick="minuscucumber()" onmouseover="onc()" onmouseout="outc()">-</button>
+                        <button class="min-btn" onclick="minuscucumber()" onmouseover="onc()"
+                            onmouseout="outc()">-</button>
                         <input type="button" value="0" class="total-btn" id="cucumber">
-                        <button class="plus-btn" onclick="addcucumber()" onmouseover="onc()" onmouseout="outc()">+</button>
+                        <button class="plus-btn" onclick="addcucumber()" onmouseover="onc()"
+                            onmouseout="outc()">+</button>
                     </div>
                 </div>
                 <div class="items">
                     <div class="item-name">Mug</div>
                     <div class="item-pic">
-                        <img src="images/mug.png" alt="apple">
+                        <img src="images/mug.png" alt="mug.png">
                         <img src="images/mug.png" alt="mug.png" class="ten">
                         <img src="images/mug.png" alt="mug.png" class="tenten">
                     </div>
@@ -183,7 +192,7 @@
                 <div class="items">
                     <div class="item-name">Rose Bouquet</div>
                     <div class="item-pic">
-                        <img src="images/Bouquet.png" alt="apple">
+                        <img src="images/Bouquet.png" alt="Bouquet.png">
                         <img src="images/Bouquet.png" alt="Bouquet.png" class="ninenine">
                         <img src="images/Bouquet.png" alt="Bouquet.png" class="sixsix">
                     </div>
